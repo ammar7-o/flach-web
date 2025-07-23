@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AOS Animations Reference</title>
+  <link href="aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f3f4f6;
+      padding: 2rem;
+    }
+
+    .box {
+      height: 150px;
+      margin: 100px auto;
+      width: 80%;
+      background: #3b82f6;
+      color: white;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-top: 3rem;
+      text-align: center;
+      color: #1f2937;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>🔥 AOS Animations Reference</h2>
+
+  <!-- List of AOS Animations -->
+  <div class="box" data-aos="fade">fade</div>
+  <div class="box" data-aos="fade-up">fade-up</div>
+  <div class="box" data-aos="fade-down">fade-down</div>
+  <div class="box" data-aos="fade-left">fade-left</div>
+  <div class="box" data-aos="fade-right">fade-right</div>
+  <div class="box" data-aos="fade-up-right">fade-up-right</div>
+  <div class="box" data-aos="fade-up-left">fade-up-left</div>
+  <div class="box" data-aos="fade-down-right">fade-down-right</div>
+  <div class="box" data-aos="fade-down-left">fade-down-left</div>
+
+  <div class="box" data-aos="flip-left">flip-left</div>
+  <div class="box" data-aos="flip-right">flip-right</div>
+  <div class="box" data-aos="flip-up">flip-up</div>
+  <div class="box" data-aos="flip-down">flip-down</div>
+
+  <div class="box" data-aos="zoom-in">zoom-in</div>
+  <div class="box" data-aos="zoom-in-up">zoom-in-up</div>
+  <div class="box" data-aos="zoom-in-down">zoom-in-down</div>
+  <div class="box" data-aos="zoom-in-left">zoom-in-left</div>
+  <div class="box" data-aos="zoom-in-right">zoom-in-right</div>
+
+  <div class="box" data-aos="zoom-out">zoom-out</div>
+  <div class="box" data-aos="zoom-out-up">zoom-out-up</div>
+  <div class="box" data-aos="zoom-out-down">zoom-out-down</div>
+  <div class="box" data-aos="zoom-out-left">zoom-out-left</div>
+  <div class="box" data-aos="zoom-out-right">zoom-out-right</div>
+  <div class="box" data-aos="fade-up" data-aos-anchor-placement="center-center">
+    Starts in center of screen
+  </div>
+
+
+  <h2>🎛️ With AOS Attributes</h2>
+
+  <div class="box" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" data-aos-offset="200"
+    data-aos-easing="ease-in-out" data-aos-anchor-placement="center-bottom">
+    Custom Attributes
+  </div>
+
+  <script src="aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out-back',
+      once: false,
+      mirror: true,
+      offset: 100,
+    });
+  </script>
+
+</body>
+
+</html>
