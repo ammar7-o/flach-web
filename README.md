@@ -1,6 +1,3 @@
-Here's your **Flach Web** documentation converted into clean, readable **Markdown format**:
-
----
 
 # ⚡ Flach Web
 
