@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"> <!-- Enables dark mode -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flach Web</title>
+  <script src="tailwind/tailwind.js"></script>
+  <link rel="stylesheet" href="tailwind/h.css">
+  <link rel="icon" href="logo.png">
+</head>
+<style>
+  textarea {
+    border: 2px #5b87ff solid;
+    width: 100%;
+    padding: 8px;
+
+  }
+</style>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- README CONTENT -->
+  <div class="p-6 max-w-4xl mx-auto my-10 bg-white dark:bg-gray-800 rounded-xl shadow-md font-sans leading-relaxed">
+    <h1 class="text-3xl font-bold mb-4"><img style="width: 100px; display: inline; margin: 5px;" src="logo.png"
+        alt="">Flach Web</h1>
+
+    <p class="mb-6 text-lg">Welcome to <strong>Flach Web</strong>, a curated collection of modern web UI tools and
+      libraries to enhance your development workflow. Click any section title to explore examples and usage in detail.
+    </p>
+
+    <a href="tailwind/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">1. Tailwind CSS</h2>
+    </a>
+    <p>
+      A utility-first CSS framework for rapid UI development. Use concise classes like:
+      <code>p-4</code>, <code>text-center</code>, <code>bg-blue-500</code>, and more to style your layout quickly and
+      consistently.
+    </p>
+    <textarea readonly name="" id="">
+   <script src="/tailwind/tailwind.js"></script>
+</textarea>
+    <a href="animations-scrolling/aos-js/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">2. AOS (Animate On Scroll)</h2>
+    </a>
+    <p>
+      Add scroll-triggered animations using <code>data-aos</code> attributes. Example:
+      <code>&lt;div data-aos="fade-up"&gt;...&lt;/div&gt;</code>
+    </p>
+    <ul class="list-disc ml-6">
+      <li><code>data-aos-delay="300"</code></li>
+      <li><code>data-aos-duration="1000"</code></li>
+      <li><code>data-aos-offset="120"</code></li>
+    </ul>
+    <textarea style="height: 400px;" readonly>
+  <link href="animations-scrolling/aos-js/aos.css" rel="stylesheet" />
+   <script src="animations-scrolling/aos-js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-out-back',
+        once: false,
+        mirror: true,
+        offset: 100,
+      });
+    </script>
+</textarea>
+    <a href="animations-scrolling/sal-js/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">3. Sal.js</h2>
+    </a>
+    <p>
+      Lightweight animation library using IntersectionObserver. Example:
+      <code>&lt;div data-sal="slide-left"&gt;...&lt;/div&gt;</code>
+    </p>
+    <ul class="list-disc ml-6">
+      <li><code>data-sal-delay</code>, <code>data-sal-duration</code></li>
+      <li><code>data-sal-easing</code></li>
+    </ul>
+    <textarea readonly style="height: 300px;">
+    <link rel="stylesheet" href="animations-scrolling/sal-js/sal.css" />
+    <script src="animations-scrolling/sal-js/sal.js"></script>
+  <script>
+    sal({
+      threshold: 1,
+      once: false,
+      easing: 'ease-out-cubic',
+    });
+  </script>
+</textarea>
+    <a href="animations/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">4. Animate.css + WOW.js</h2>
+    </a>
+    <p>
+      Combine Animate.css and WOW.js to animate elements on scroll. Example:
+      <code>&lt;div class="wow bounceInUp"&gt;...&lt;/div&gt;</code>
+    </p>
+    <p>Popular classes: <code>fadeIn</code>, <code>zoomIn</code>, <code>slideInLeft</code>.</p>
+    <textarea readonly style="height: 150px;">
+     <link rel="stylesheet" href="animations/animate.css" />
+    <script src="animations/wow.min.js"></script> 
+   <script>
+    new WOW().init();
+  </script>
+</textarea>
+    <a href="font-awesome/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">5. Font Awesome</h2>
+    </a>
+    <p>
+      Scalable vector icons customizable with CSS. Example usage:
+    </p>
+    <ul class="list-disc ml-6">
+      <li><code>&lt;i class="fas fa-home"&gt;&lt;/i&gt;</code> – Solid home icon</li>
+      <li><code>&lt;i class="fab fa-github"&gt;&lt;/i&gt;</code> – GitHub brand icon</li>
+    </ul>
+    <p>Customize using classes like <code>fa-2x</code>, or Tailwind classes like <code>text-blue-500</code>.</p>
+    <textarea readonly style="height: 50px;">
+   <link rel="stylesheet" href="font-awesome/css/all.min.css" />
+</textarea>
+    <a href="hint-css/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">6. Hint.css (Tooltips)</h2>
+    </a>
+    <p>
+      Simple tooltip library using data attributes. Example:
+      <code>&lt;button class="hint--top" aria-label="Tooltip text"&gt;Hover me&lt;/button&gt;</code>
+    </p>
+    <ul class="list-disc ml-6">
+      <li>Position using classes like <code>hint--top</code>, <code>hint--bottom</code>, etc.</li>
+      <li>Customize with inline CSS variables:<br />
+        <code>style="--hint-background: #8e44ad; --hint-color: #fff;"</code>
+      </li>
+    </ul>
+    <textarea readonly style="height: 50px;">
+    <link rel="stylesheet" href="hint-css/hint.min.css" />
+</textarea>
+    <a href="fonts/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">7. Fonts</h2>
+    </a>
+    <p>
+      Includes a collection of Arabic and English fonts for web typography. Easily integrate unique typefaces into your
+      project.
+    </p>
+    <textarea readonly style="height: 50px;">
+    <link rel="stylesheet" href="fonts/fonts.css" />
+</textarea>
+    <a href="bootstrap/index.html">
+      <h2 class="text-xl font-semibold mt-6 mb-2">8. Bootstrap 5</h2>
+    </a>
+    <p>
+      A powerful front-end framework for building responsive websites quickly using prebuilt components and utility
+      classes. Bootstrap includes layout grids, buttons, modals, navbars, and more.
+    </p>
+    <ul class="list-disc ml-6">
+      <li>Responsive grid system with <code>.container</code>, <code>.row</code>, <code>.col</code></li>
+      <li>Predefined button styles: <code>.btn</code>, <code>.btn-primary</code>, <code>.btn-outline-*</code></li>
+      <li>Reusable components: <code>.navbar</code>, <code>.card</code>, <code>.modal</code>, <code>.alert</code></li>
+      <li>JavaScript plugins: Carousel, Collapse, Dropdowns, Tooltips</li>
+    </ul>
+    <p class="mt-2">
+      Example usage:
+      <code>&lt;button class="btn btn-success"&gt;Click me&lt;/button&gt;</code><br>
+      <code>&lt;div class="alert alert-info"&gt;Bootstrap Alert&lt;/div&gt;</code>
+    </p>
+    <p class="mt-4">Customize using classes like <code>.bg-*</code>, <code>.text-*</code>, <code>.m-*</code>, and
+      <code>.p-*</code> for margin and padding spacing.
+    </p>
+ <textarea readonly style="height: 80px;">
+       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</textarea>
+    <h2 class="text-xl font-semibold mt-6 mb-2">🔧 Initialization Scripts</h2>
+    <p>All libraries are initialized with default settings for quick use:</p>
+    <ul class="list-disc ml-6">
+      <li><strong>AOS:</strong> Duration, offset, mirror</li>
+      <li><strong>SAL:</strong> Easing, threshold</li>
+      <li><strong>WOW:</strong> Basic setup on scroll</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">📌 Notes</h2>
+    <ul class="list-disc ml-6">
+      <li>Use only one animation library per element to avoid conflicts.</li>
+      <li>Add extra vertical space to see scroll animations clearly.</li>
+      <li>Customize animation offset for earlier or later trigger points.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">💚 Made with love by Ammar Chacal</h2>
+  </div>
+
+</body>
+<script>
+  window.alert("You can click the titles to view examples.")
+</script>
+
+</html>
