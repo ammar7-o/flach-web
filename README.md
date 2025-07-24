@@ -1,86 +1,196 @@
-# Flach Web
+Here's your **Flach Web** documentation converted into clean, readable **Markdown format**:
 
-\<img style="width: 100px; display: inline; margin: 5px;" src="logo.png" alt=""\>
+---
 
-Welcome to **Flach Web**, a curated collection of modern web UI tools and libraries to enhance your development workflow. Click any section title to explore examples and usage in detail.
+# ⚡ Flach Web
 
------
+**Welcome to Flach Web**, a curated collection of modern web UI tools and libraries to enhance your development workflow.
+Click any section title to explore examples and usage in detail.
 
-## 1\. Tailwind CSS
+---
 
-A utility-first CSS framework for rapid UI development. Use concise classes like: `p-4`, `text-center`, `bg-blue-500`, and more to style your layout quickly and consistently.
+## 1. Tailwind CSS
 
------
+A utility-first CSS framework for rapid UI development.
 
-## 2\. AOS (Animate On Scroll)
+Use concise classes like:
 
-Add scroll-triggered animations using `data-aos` attributes. Example: `<div data-aos="fade-up">...</div>`
+```html
+p-4, text-center, bg-blue-500
+```
 
-  * `data-aos-delay="300"`
-  * `data-aos-duration="1000"`
-  * `data-aos-offset="120"`
+to style your layout quickly and consistently.
 
------
+---
 
-## 3\. Sal.js
+## 2. AOS (Animate On Scroll)
 
-Lightweight animation library using IntersectionObserver. Example: `<div data-sal="slide-left">...</div>`
+Add scroll-triggered animations using `data-aos` attributes.
 
-  * `data-sal-delay`, `data-sal-duration`
-  * `data-sal-easing`
+Example:
 
------
+```html
+<div data-aos="fade-up">...</div>
+```
 
-## 4\. Animate.css + WOW.js
+Other attributes:
 
-Combine Animate.css and WOW.js to animate elements on scroll. Example: `<div class="wow bounceInUp">...</div>`
+```html
+data-aos-delay="300"
+data-aos-duration="1000"
+data-aos-offset="120"
+```
 
-Popular classes: `fadeIn`, `zoomIn`, `slideInLeft`.
+---
 
------
+## 3. Sal.js
 
-## 5\. Font Awesome
+Lightweight animation library using `IntersectionObserver`.
 
-Scalable vector icons customizable with CSS. Example usage:
+Example:
 
-  * `<i class="fas fa-home"></i>` – Solid home icon
-  * `<i class="fab fa-github"></i>` – GitHub brand icon
+```html
+<div data-sal="slide-left">...</div>
+```
 
-Customize using classes like `fa-2x`, or Tailwind classes like `text-blue-500`.
+Attributes:
 
------
+```html
+data-sal-delay
+data-sal-duration
+data-sal-easing
+```
 
-## 6\. Hint.css (Tooltips)
+---
 
-Simple tooltip library using data attributes. Example: `<button class="hint--top" aria-label="Tooltip text">Hover me</button>`
+## 4. Animate.css + WOW\.js
 
-  * Position using classes like `hint--top`, `hint--bottom`, etc.
-  * Customize with inline CSS variables: `style="--hint-background: #8e44ad; --hint-color: #fff;"`
+Combine Animate.css and WOW\.js to animate elements on scroll.
 
------
+Example:
 
-## 7\. Fonts
+```html
+<div class="wow bounceInUp">...</div>
+```
 
-Includes a collection of Arabic and English fonts for web typography. Easily integrate unique typefaces into your project.
+Popular animation classes:
 
------
+```
+fadeIn, zoomIn, slideInLeft
+```
+
+---
+
+## 5. Font Awesome
+
+Scalable vector icons customizable with CSS.
+
+Examples:
+
+```html
+<i class="fas fa-home"></i>       <!-- Solid home icon -->
+<i class="fab fa-github"></i>     <!-- GitHub brand icon -->
+```
+
+Customize with:
+
+```
+fa-2x, text-blue-500 (Tailwind)
+```
+
+---
+
+## 6. Hint.css (Tooltips)
+
+Simple tooltip library using `data` attributes.
+
+Example:
+
+```html
+<button class="hint--top" aria-label="Tooltip text">Hover me</button>
+```
+
+Customize position with:
+
+```
+hint--top, hint--bottom, etc.
+```
+
+Style with inline CSS variables:
+
+```html
+style="--hint-background: #8e44ad; --hint-color: #fff;"
+```
+
+---
+
+## 7. Fonts
+
+Includes a collection of **Arabic and English fonts** for web typography.
+
+Easily integrate unique typefaces into your project using CSS.
+
+---
+
+## 8. Bootstrap 5
+
+A powerful front-end framework for building responsive websites quickly.
+
+Features:
+
+* **Responsive grid system**:
+
+  ```html
+  .container, .row, .col
+  ```
+* **Button styles**:
+
+  ```html
+  .btn, .btn-primary, .btn-outline-*
+  ```
+* **Reusable components**:
+
+  ```html
+  .navbar, .card, .modal, .alert
+  ```
+* **JavaScript plugins**:
+  Carousel, Collapse, Dropdowns, Tooltips
+
+Example:
+
+```html
+<button class="btn btn-success">Click me</button>
+<div class="alert alert-info">Bootstrap Alert</div>
+```
+
+Customize with:
+
+```html
+.bg-*, .text-*, .m-*, .p-* 
+```
+
+---
 
 ## 🔧 Initialization Scripts
 
 All libraries are initialized with default settings for quick use:
 
-  * **AOS:** Duration, offset, mirror
-  * **SAL:** Easing, threshold
-  * **WOW:** Basic setup on scroll
+* **AOS**: `duration`, `offset`, `mirror`
+* **SAL**: `easing`, `threshold`
+* **WOW**: Basic setup on scroll
 
------
+---
 
 ## 📌 Notes
 
-  * Use only one animation library per element to avoid conflicts.
-  * Add extra vertical space to see scroll animations clearly.
-  * Customize animation offset for earlier or later trigger points.
+* ✅ Use **only one animation library per element** to avoid conflicts.
+* ✅ Add extra **vertical space** to see scroll animations clearly.
+* ✅ Customize animation **offset** for earlier/later trigger points.
 
------
+---
 
-## 💚 Made with love by Ammar Chacal
+### 💚 Made with love by **Ammar Chacal**
+
+---
+
+Let me know if you'd like this exported as a `README.md` file or customized further (e.g. adding links, icons, badges).
