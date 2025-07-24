@@ -193,4 +193,3 @@ All libraries are initialized with default settings for quick use:
 
 ---
 
-Let me know if you'd like this exported as a `README.md` file or customized further (e.g. adding links, icons, badges).
